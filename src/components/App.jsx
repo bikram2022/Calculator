@@ -3,25 +3,26 @@ import Wrapper from "./Wrapper";
 import Screen from "./Screen";
 import Button from "./Button";
 import ButtonBox from "./ButtonBox";
+import CalcProvider from "../context/CalContext";
 
-let buttonValues = ["c","+-","%","⌫",
-            7,8,9,"/",
-            4,5,6,"*",
-            1,2,3,"-",
-            0,".","=","+"];
+let buttonValues = ["c","+-","⌫","/",
+            7,8,9,"*",
+            4,5,6,"-",
+            1,2,3,"+",
+            0,".","="];
 
 function App() {
   return (
-    <div>
+    <CalcProvider>
       <Wrapper>
         <Screen />
         <ButtonBox>
           {buttonValues.flat().map((btn,index) => {
-            return (<Button key = {index}>{btn}</Button>);
+            return (<Button key = {index} value={btn}>{btn}</Button>);
           })}
         </ButtonBox>
       </Wrapper>
-    </div>
+    </CalcProvider>
   );
 }
 

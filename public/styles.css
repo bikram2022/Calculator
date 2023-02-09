@@ -11,7 +11,7 @@ body{
     justify-content: center;
 }
 .wrapper{
-    background: burlywood;
+    background: white;
     width: 20rem;
     padding: 2rem;
     margin-top: 4rem; 
@@ -19,7 +19,7 @@ body{
     box-shadow: 25px 25px 13px 0px rgba(0,0,0,0.1);
 }
 .screen{
-    height: 4rem;
+    height: 6rem;
     margin-bottom: 1rem;
 }
 .button-box{
@@ -42,4 +42,11 @@ body{
 }
 .button:hover{
     border: 2px dotted #242424;
+}
+.equal{
+    background:#56d3ad;
+    grid-column: 3/5;
+}
+.operator{
+    background: #ce7f26;
 }
