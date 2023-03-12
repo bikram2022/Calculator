@@ -8,7 +8,7 @@ function CalcProvider(props){
         num: 0,
         res: 0
     });
-
+  
     const providerValue = {calc, setCalc};
 
     return <CalcContext.Provider value={providerValue}>
